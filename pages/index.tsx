@@ -4,6 +4,8 @@ import { AppBar } from '../components/AppBar'
 import Head from 'next/head'
 import { PingButton } from '../components/PingButton'
 import WalletContextProvider from "../components/WalletContextProvider";
+import {TokenMenu} from "../components/TokenMenu";
+import { DebugPanel } from '../components/DebugPanel';
 
 const Home: NextPage = (props) => {
 
@@ -19,8 +21,10 @@ const Home: NextPage = (props) => {
       <WalletContextProvider>
         <AppBar />
         <div className={styles.AppBody}>
-          <PingButton/>
+         <TokenMenu/>
         </div>
+        {/* Debug panel - set isVisible to true to enable */}
+        <DebugPanel isVisible={true} />
       </WalletContextProvider>
     </div>
   );

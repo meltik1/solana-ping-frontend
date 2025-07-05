@@ -1,5 +1,5 @@
 import { FC, useState } from 'react'
-import styles from '../styles/PingButton.module.css'
+import styles from '../styles/Button.module.css'
 import {useConnection, useWallet} from "@solana/wallet-adapter-react";
 import {PublicKey, Transaction, TransactionInstruction} from "@solana/web3.js";
 
